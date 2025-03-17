@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">IMS_Score_App</string>
+
+    <!-- MainActivity (activity_main.xml) -->
+    <string name="poids_label">Poids (kg)</string>
+    <string name="taille_label">Taille (cm)</string>
+    <string name="age_label">Âge</string>
+    <string name="sexe_label">Sexe</string>
+    <string name="sexe_homme">Homme</string>
+    <string name="sexe_femme">Femme</string>
+    <string name="annuler_button">Annuler</string>
+    <string name="calculer_button">Calculer</string>
+
+    <!-- IMC_ResultatActivity (activity_imc_resultat.xml and Java code) -->
+    <string name="imc_label">IMC: %1$.2f</string>
+    <string name="classification_label">Classification</string>
+    <string name="range_label">Range</string>
+    <string name="denutrition_label">Dénutrition ou famine ( - 16.0)</string>
+    <string name="maigreur_label">Maigreur (16.0 - 18.4)</string>
+    <string name="corpulence_normale_label">Corpulence normale (18.5 - 24.9)</string>
+    <string name="surpoids_label">Surpoids (25.0 - 29.9)</string>
+    <string name="obesite_moderee_label">Obésité modérée (30.0 - 34.9)</string>
+    <string name="obesite_severe_label">Obésité sévère (35.0 - 39.9)</string>
+    <string name="obesite_morbide_label">Obésité morbide (≥ 40.0)</string>
+    <string name="retour_button">Retour</string>
+    <string name="sauvegarder_button">Sauvegarder</string>
+    <string name="sauvegarde_success">Données sauvegardées avec succès</string>
+    <string name="sauvegarde_erreur">Erreur lors de la sauvegarde</string>
+
+    <!-- GraphActivity (activity_graph.xml and item_enregistrement.xml) -->
+    <string name="date_label">Date: </string>
+    <string name="imc_value_label">IMC: </string>
+</resources>

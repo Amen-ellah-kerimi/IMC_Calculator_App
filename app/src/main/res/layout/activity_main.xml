@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <!-- Weight Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <!-- Weight Label -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/poids_label"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <!-- Weight Input Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/weightInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeColor="@color/black"
+            app:endIconMode="clear_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPoids"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Height Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <!-- Height Label -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/taille_label"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <!-- Height Input Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/heightInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeColor="@color/black"
+            app:endIconMode="clear_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etTaille"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Age Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <!-- Age Label -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/age_label"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <!-- Age Input Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ageInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeColor="@color/black"
+            app:endIconMode="clear_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Sex Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sexe_label"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Sex Input (Radio Buttons) -->
+    <RadioGroup
+        android:id="@+id/sexRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rbHomme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sexe_homme"
+            android:layout_marginEnd="16dp" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rbFemme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sexe_femme" />
+    </RadioGroup>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp">
+
+        <!-- Cancel Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAnnuler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/annuler_button"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/red"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Calculate Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCalculer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/calculer_button"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/green" />
+    </LinearLayout>
+</LinearLayout>
