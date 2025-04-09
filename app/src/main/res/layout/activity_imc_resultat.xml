@@ -28,6 +28,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/imc_label"
                 android:textSize="24sp"
+                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:gravity="center"
                 android:layout_marginBottom="16dp" />
@@ -39,6 +40,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/classification_label"
                 android:textSize="18sp"
+                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:gravity="center"
                 android:layout_marginBottom="16dp" />
@@ -50,6 +52,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/range_label"
                 android:textSize="16sp"
+                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:gravity="center" />
         </LinearLayout>

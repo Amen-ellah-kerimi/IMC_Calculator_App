@@ -28,6 +28,11 @@
     <string name="sauvegarde_erreur">Erreur lors de la sauvegarde</string>
 
     <!-- GraphActivity (activity_graph.xml and item_enregistrement.xml) -->
-    <string name="date_label">Date: </string>
-    <string name="imc_value_label">IMC: </string>
+
+    <string name="historique_title">Historique des Résultats IMC</string>
+    <string name="retour_button_graph">Retour</string>
+    <string name="aucun_resultat">Aucun résultat trouvé.</string>
+    <string name="imc_graph_label">IMC</string>
+    <string name="chart_no_data">Aucune donnée disponible pour afficher le graphique.</string>
+
 </resources>
