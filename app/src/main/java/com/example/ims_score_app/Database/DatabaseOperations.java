@@ -5,21 +5,27 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import com.example.ims_score_app.Database.DatabaseHelper;
+import com.example.ims_score_app.Database.DatabaseSchema;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import androidx.recyclerview.widget.RecyclerView;
+
 public class DatabaseOperations {
     private DatabaseHelper dbHelper;
     private SQLiteDatabase database;
 
-    // Constructor: Initialize with context and create DatabaseHelper
+
     public DatabaseOperations(Context context) {
         dbHelper = new DatabaseHelper(context);
     }
 
-    // Open the database connection
+
     public void open() {
+
         database = dbHelper.getWritableDatabase();
     }
 
-    // Close the database connection
+
     public void close() {
         if (database != null && database.isOpen()) {
             database.close();
@@ -27,7 +33,7 @@ public class DatabaseOperations {
         dbHelper.close();
     }
 
-    // Insert a new health record into the database
+
     public long insertResult(double poids, double taille, int age, String sexe, double imc, String classification) {
         ContentValues values = new ContentValues();
         values.put(DatabaseSchema.HealthEntry.COLUMN_NAME_POIDS, poids);
@@ -38,15 +44,15 @@ public class DatabaseOperations {
         values.put(DatabaseSchema.HealthEntry.COLUMN_NAME_CLASSIFICATION, classification);
         values.put(DatabaseSchema.HealthEntry.COLUMN_NAME_DATE, System.currentTimeMillis()); // te5ou wa9t automatique
 
-        // Insert and return the row ID (-1 if failed)
+
         return database.insert(DatabaseSchema.HealthEntry.TABLE_NAME, null, values);
     }
 
     public Cursor getTousEnregistrements() {
         return database.query(DatabaseSchema.HealthEntry.TABLE_NAME,
-                null, // All columns
-                null, null, // No filter
-                null, null, // No grouping
-                DatabaseSchema.HealthEntry.COLUMN_NAME_DATE + " ASC"); // Sort by date
+                null,
+                null, null,
+                null, null,
+                DatabaseSchema.HealthEntry.COLUMN_NAME_DATE + " ASC");
     }
 }

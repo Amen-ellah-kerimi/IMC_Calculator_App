@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".GraphActivity">
+    android:padding="16dp">
 
     <!-- Title -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/historique_title"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
         android:gravity="center"
-        android:layout_marginBottom="16dp"/>
-    <!-- Line Chart -->
-    <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/imcChart"
+        android:text="Votre Historique IMC"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBaseDonnee"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginBottom="16dp"/>
+        android:layout_weight="1"/>
 
-    <!-- Return Button -->
-    <com.google.android.material.button.MaterialButton
+    <!-- Back Button -->
+    <Button
         android:id="@+id/btnRetourGraph"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/retour_button_graph"
-    android:textColor="@color/white"
-    app:backgroundTint="@color/design_default_color_primary" /> <!-- Choose a suitable color -->
-
+        android:layout_marginTop="16dp"
+        android:text="retour" />
 </LinearLayout>

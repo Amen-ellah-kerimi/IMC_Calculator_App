@@ -9,11 +9,11 @@
 
     <!-- IMC Result Card -->
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="match_parent"
+        android:layout_width="373dp"
         android:layout_height="wrap_content"
-        app:cardElevation="4dp"
+        android:layout_marginBottom="16dp"
         app:cardCornerRadius="8dp"
-        android:layout_marginBottom="16dp">
+        app:cardElevation="4dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,35 +26,35 @@
                 android:id="@+id/tvIMC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/imc_label"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
+                android:layout_marginBottom="16dp"
                 android:gravity="center"
-                android:layout_marginBottom="16dp" />
+                android:text="@string/imc_label"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <!-- IMC Classification -->
             <TextView
                 android:id="@+id/tvClassification"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/classification_label"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
+                android:layout_marginBottom="16dp"
                 android:gravity="center"
-                android:layout_marginBottom="16dp" />
+                android:text="@string/classification_label"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <!-- IMC Range -->
             <TextView
                 android:id="@+id/tvIMC_range"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/range_label"
-                android:textSize="16sp"
-                android:textStyle="bold"
                 android:textColor="@color/black"
-                android:gravity="center" />
+                android:textSize="16sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 

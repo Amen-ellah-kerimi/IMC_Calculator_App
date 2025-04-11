@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
     EditText etPoids, etTaille, etAge;
     RadioButton rbHomme, rbFemme;
     Button btnCalculer, btnAnnuler;
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
                 intent.putExtra("sexe", sexe );
                 startActivity(intent);
-                Log.d("MainActivity", "Intent started"); // Debugging
+                Log.d("MainActivity", "Intent started");
             }
         });
 
@@ -83,4 +84,3 @@ public class MainActivity extends AppCompatActivity {
         rbFemme.setChecked(false);
     }
 }
-
