@@ -3,8 +3,11 @@
 
     <!-- MainActivity (activity_main.xml) -->
     <string name="poids_label">Poids (kg)</string>
+    <string name="poids_hint">Poids</string>
     <string name="taille_label">Taille (cm)</string>
+    <string name="taille_hint">Taille</string>
     <string name="age_label">Âge</string>
+    <string name="age_hint">Âge</string>
     <string name="sexe_label">Sexe</string>
     <string name="sexe_homme">Homme</string>
     <string name="sexe_femme">Femme</string>
